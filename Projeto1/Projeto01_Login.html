@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleleapis.com/css?family=Roboto" rel="stylesheet">
+        <title>Login | ITA Júnior</title>
+        <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+         }
+            
+         body {
+            font-family: 'Roboto', sans-serif;
+            background: #05285B;
+            color: #f4f4f4;
+            line-height: 1.5;
+        }
+                
+        #container {
+            margin: 30px auto;
+            max-width: 400px;
+            padding: 20px;
+         }
+                
+        a {
+            text-decoration: none;
+         }
+                
+        .form-wrap { /* Area ao redor do texto */
+            background: #f4f4f4;
+            color: #333;
+            border-radius: 5px;
+            padding: 15px 25px;
+        }
+        .form-wrap h1, .form-wrap p { /* Texto principal */
+            text-align: center;
+            cursor: default;
+        }
+        .form-wrap h1 {
+            color: #05285B;
+        }
+        .form-wrap .form-group { /* Distancia de labels e inputs */
+            margin-top: 10px;
+        }
+        .form-wrap .form-group label { /* Estilo da label */
+            display: block;
+            color: #333;
+        }
+        .form-wrap .form-group input { /* Estilo do input */
+            width: 100%;
+            padding: 10px;
+            border: #666 1px solid;
+            border-radius: 5px;
+        }
+        .form-wrap button { /* Estilo do Botão */
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 25px;
+            border-radius: 5px;
+            /* border: #666 1px solid; */
+            border: none;
+            background: #E6D11F;
+            cursor: pointer;
+        }
+        .form-wrap button:hover {
+            background: #D8C11A;    
+        }
+        .form-wrap .middle-text {
+            text-align: left;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+        .form-wrap .middle-text a {
+            color: #333;
+        }
+        .form-wrap .middle-text a:hover {
+            color: #1A5FB4;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 10px;
+            cursor: default;
+        }
+        footer a {
+            color: #E6D11F;
+        }
+        footer a:hover {
+            color: #D8C11A;
+        }
+        footer img {
+            display: block;
+            margin: auto;
+            max-width: 500px;
+            margin-top: 40px;
+            margin-left: -90px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="form-wrap">
+            <h1>Login</h1>
+            <p>Vista a camisa!</p>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="email@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                </div>
+                <p class="middle-text">
+                    <a href="Projeto01_EsqueceuSenha.html" target="_blank">Esqueceu a senha?</a>
+                </p>
+                <button type="submit" class="btn">LOGIN</button>
+            </form>
+        </div>
+        <footer>
+            <p>Não possui um cadastro? <a href="Projeto01_Cadastro.html" target="_blank">Cadastre-se</a></p>
+            <img src="./img/Cópia de LogoITAJunior.png" alt="LogoITAJunior">
+        </footer>
+    </div>
+</body>
+</html>
