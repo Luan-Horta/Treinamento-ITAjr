@@ -1,0 +1,15 @@
+/* Colors */
+.text-primary, .bg-primary {
+    color: #0033FF;
+}
+.text-secondary, .bg-secondary {
+    color: #FFCC00;
+}
+.text-dark, .bg-dark {
+    color: #333;
+}
+.text-light, .bg-light {
+    color: #f4f4f4;
+}
+
+

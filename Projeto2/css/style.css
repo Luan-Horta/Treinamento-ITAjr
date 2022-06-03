@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* Initial Configuration  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #333;
+    color: #f4f4f4;
+    line-height: 1.5;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+p {
+    margin: 1rel 0;
+}
+img {
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.6);
+    color: #333;
+    opacity: 0.8;
+    width: 100%;
+    height: 7rem;
+    position: fixed;
+    top: 0;
+    padding: 0 3rem;
+}
+.navbar a{
+    color: #0033FF;
+    padding: 1rem 2rem;
+    margin: 0rem 0.5rem;
+}
+.navbar a:hover {
+    color: #FFCC00;
+}
+.navbar ul {
+    display: flex;
+    font-size: 1.5rem;
+}
+.navbar .logo{
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+/* Header  */
+.header {
+    background: url('https://www.ovale.com.br/image/policy:1.148947.1627182705:1627182705/image.jpg?f=3x2&w=1200')
+    no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #f4f4f4;
+} 
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+.header * {
+    z-index: 10;
+}
+
+.header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+    padding: 0rem 2rem;
+}
+.header .content h1 {
+    font-size: 5rem;
+}
+.header .content p {
+    font-size: 2rem;
+    max-width: 70rem;
+    margin: 2rem 0rem 3rem;
+    font-weight: 300;
+}
+
+.header .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 5rem;
+    height: 50%;
+    padding: 0rem 10rem 5rem;
+}
+.item {
+    padding: 3rem 3rem 1rem;
+    border: #f4f4f4 0.1rem solid;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.item:hover {
+    background: #f4f4f485;
+    color: #000;
+    cursor: pointer;
+}
+.item p {
+    padding-top: 3rem;
+    font-weight: 300;
+}
+
+/* About  */
+.about {
+    padding: 3rem;
+    background: #f4f4f4;
+    display: grid;
+    grid-template-areas: 
+    'about-header about-header'
+    'about-1 about-2';
+    height: 100vh;
+}
+.about-header {
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 8rem 0 4rem;
+    text-align: center;
+    grid-area: about-header;
+}
+.about-1 {
+    grid-area: about-1;
+    border-right: #0033FF dotted 0.1rem;
+    padding-right: 4rem;
+}
+.about-2 {
+    grid-area: about-2;
+    padding-left: 4rem;
+}
+.about h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.about p {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* Login */
+.login {
+    padding: 3rem;
+    background: #333;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.form-wrap { /* Area ao redor do texto */
+    background: #f4f4f4;
+    color: #333;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 40%;
+}
+.form-wrap h1 { /* Texto principal */
+    text-align: center;
+    cursor: default;
+    font-size: 5rem;
+}
+.form-wrap .form-group { /* Distancia de labels e inputs */
+    margin-top: 2rem;
+}
+.form-wrap .form-group label { /* Estilo da label */
+    display: block;
+    color: #333;
+    font-size: 2rem;
+    text-align: left;
+}
+.form-wrap .form-group input { /* Estilo do input */
+    width: 100%;
+    padding: 1rem;
+    border: #666 1px solid;
+    border-radius: 1rem;
+}
+.form-wrap button { /* Estilo do Botão */
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+    border: none;
+    background: #FFCC00;
+    cursor: pointer;
+}
+.form-wrap button:hover {
+    background: #ffb300;    
+}
+.form-wrap .middle-text {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 0.5rem;
+}
+.form-wrap .middle-text a {
+    color: #333;
+}
+.form-wrap .middle-text a:hover {
+    color: #0033FF;
+}
+.bottom {
+    text-align: center;
+    margin-top: 1rem;
+    cursor: default;
+    font-size: 1.5rem;
+}
+.bottom a {
+    color: #FFCC00;
+}
+.bottom a:hover {
+    color: #ffb300;
+}
+
+/* Footer  */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 2.5rem;
+    background: #222;
+    font-size: 1.1rem;
+}
